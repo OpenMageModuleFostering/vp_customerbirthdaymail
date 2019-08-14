@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Vp_Customerbirthdaymail>
+			<version>1.0.0</version>
+		</Vp_Customerbirthdaymail>
+	</modules>
+	<global>
+        <models>
+            <customerbirthdaymail>
+                <class>Vp_Customerbirthdaymail_Model</class>
+            </customerbirthdaymail>                         
+        </models>
+        <helpers>
+            <customerbirthdaymail>
+                <class>Vp_Customerbirthdaymail_Helper</class>
+            </customerbirthdaymail>                         
+        </helpers>
+        <template>
+                <email>
+                    <customerbirthdaymail_email_template translate="label" module="customerbirthdaymail">
+                        <label>Customer Birthday Mail</label>
+                        <file>birthdaymail_email.html</file>
+                        <type>html</type>
+                    </customerbirthdaymail_email_template>
+                </email>
+        </template>
+    </global>
+    <crontab>
+        <jobs>
+            <customerbirthdaymail>
+                <schedule><cron_expr>2 0 * * *</cron_expr></schedule>
+                <run><model>customerbirthdaymail/observer::checkbirthday</model></run>
+            </customerbirthdaymail>
+        </jobs>
+    </crontab>
+</config>

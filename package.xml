@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package>
+    <name>Vp_Customerbirthdaymail</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>OSL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>This extension send birthday mails to customers</summary>
+    <description>This extension send birthday mails to customers&#xD;
+at 12.02 am using cron.</description>
+    <notes>Sends birthday mails to customers.</notes>
+    <authors><author><name>vp</name><user>vpinfo</user><email>vpinfo39@gmail.com</email></author></authors>
+    <date>2014-07-12</date>
+    <time>04:52:07</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="Vp_Customerbirthdaymail.xml" hash="2a78dd4618175aa888d30464e6beec20"/></dir></target><target name="magelocal"><dir name="Vp"><dir name="Customerbirthdaymail"><dir name="Helper"><file name="Data.php" hash="e49f81d5316e10c31bdaffaac2d0b9c6"/></dir><dir name="Model"><file name="Observer.php" hash="09737188e03ab30c53a4f6db7944eb23"/></dir><dir name="etc"><file name="config.xml" hash="dbc5f02dbb1346951fcb218e94df452d"/></dir></dir></dir></target><target name="magelocale"><dir name="en_US"><dir name="template"><dir name="email"><file name="birthdaymail_email.html" hash="e864cfdf77e1f4b3ac2723177e2753b7"/></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

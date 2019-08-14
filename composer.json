@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Vp_Customerbirthdaymail",
+    "type": "magento-module",
+    "license": "OSL",
+    "homepage": "",
+    "description": "This extension send birthday mails to customers",
+    "authors": [
+    {
+        "name": "vp",
+        "email": "vpinfo39@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
